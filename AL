@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+	char x;
+	scanf("%c",&x);
+	for(int i=1;i<=3;i++){
+		for(int a=1;a<=3-i;a++){
+			printf(" ");
+		}
+		for(int b=1;b<=2*i-1;b++){
+			printf("%c",x);
+		}
+		printf("\n");
+	}
+	for(int i=4;i<=5;i++){
+		for(int a=1;a<=i-3;a++){
+			printf(" ");
+		}
+		for(int b=1;b<=11-2*i;b++){
+			printf("%c",x);
+		}
+		printf("\n");
+	}
+	return 0;
+}
